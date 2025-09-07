@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-green-color: #6E9277;
+    --main-light-blue-color: #f7fef8;;
+    --main-azure-color: #EAF4F4;
+    --main-brown-color: #65524D;
+    --main-red-color: #D96352;
+    --main-font-color-black: #1a1716;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body {
+    background-color: var(--main-light-blue-color);
+    font-family: "Roboto Flex", sans-serif;
+    color: var(--main-font-color-black);
+}
+
+
+/* HEADER */
+
+.main-header {
+    background-color: var(--main-brown-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 230px 5px 150px;
+    font-size: 1.2rem;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-header {
+    display: flex;
+    list-style: none;
+}
+
+.nav-header li:first-of-type {
+    margin-right: 40px;
+}
+
+.nav-categories {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-bottom: 2px solid var(--main-brown-color);
+    background-color: var(--main-azure-color);
+}
+
+.nav-categories li {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--main-font-color-black);
+}

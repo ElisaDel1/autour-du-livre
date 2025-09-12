@@ -10,3 +10,5 @@ Thème du site E-commerce : l'univers livre.
 copyrights :
 
 https://unsplash.com/fr/photos/femme-en-t-shirt-blanc-allongee-sur-le-sol-avec-des-livres-et-des-photos-vTsgVf6MF3U?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+
+https://unsplash.com/fr/photos/lot-de-livre-de-titre-assorti-eeSdJfLfx1A?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash

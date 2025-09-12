@@ -1,0 +1,242 @@
+/* HERO */
+
+header {
+    margin-top: -100px;
+}
+
+.hero {
+    background-image: url(../img/livres/categorie-livres.jpg);
+    background-size: cover;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.hero p {
+    background-color:#eaf4f4ba;
+    width: 30vw;
+    padding: 60px 0;
+    margin-left: 50%;
+    text-align: center;
+    border-radius: 15px;
+    border: var(--main-light-blue-color) solid 2px;
+    font-size: 3rem;
+}
+
+
+/* MAIN ACCUEIL */
+
+.main-accueil-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0 80px 0;
+    width: 100%;
+}
+
+.categories {
+    text-align: center;
+    width: 16vw;
+    padding: 0 10px;
+    margin: 0 15px;
+    border-right: var(--main-brown-color) dashed 1px;
+}
+
+.categories h1 {
+    margin-bottom: 30px;
+}
+
+.categories-cote {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+.categories-cote a {
+    text-decoration: none;
+    color: var(--main-font-color-black);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.categories-cote a:hover {
+    background-color: var(--main-red-color);
+    color: var(--main-azure-color);
+    transition: all 0.1s ease-in;
+}
+
+
+/* ARTICLES */
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.article-fond {
+    display: flex;
+    width: 350px;
+    height: 225px;
+    background-color: var(--main-brown-color);
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.article-page-gauche {
+    width: 47.5%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.article-page-gauche img {
+    width: inherit;
+    border-radius: 5px;
+}
+
+.article-page-gauche a {
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.article-milieu {
+    background-color: rgb(228, 213, 192);
+    width: 5%;
+}
+
+.article-page-droite {
+    padding: 8px;
+    width: 47.5%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.article-page-droite p:first-child {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.article-page-droite p:first-child a {
+    color: var(--main-green);
+    text-decoration: none;
+}
+
+.article-page-droite p:first-child a:hover {
+    color: #5d8166;
+}
+
+.article-page-droite p {
+    font-size: 0.9em;
+}
+
+.bouton-produit {
+    text-decoration: none;
+    color: var(--main-light-blue-color);
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid var(--main-red-color);
+    border-radius: 10px;
+    padding: 5px 3px;
+    background-color: var(--main-red-color);
+}
+
+.bouton-produit:hover {
+    background-color: #d35a47;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Tablette */
+
+@media screen and (max-width:1024px) {
+    .hero > div {
+        height: auto;
+        width: 28%;
+        padding: 45px 40px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width:768px) {
+    .hero {
+        width: 100vw;
+        height: 400px;
+        border-radius: 0;
+        margin-top: 60px;
+        background-position: 65%;
+    }
+
+    .hero > div {
+        height: auto;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .main-accueil-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 10px;
+        width: auto;
+    }
+
+    .categories {
+        border-right: none;
+        width: auto;
+        padding: 0 0 40px 0;
+        margin: 0;
+        border-bottom: var(--main-brown-color) dashed 1px;
+    }
+
+    .categories-cote {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .categories-cote a {
+        padding: 0px 5px;
+        margin: 0 0 15px 0;
+        height: 70px;
+        width: 150px;
+        border: var(--main-red-color) dashed 1.5px;
+        text-align: center;
+    }
+
+    .categories-cote li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

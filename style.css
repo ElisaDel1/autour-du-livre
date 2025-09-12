@@ -212,16 +212,13 @@ header a {
     padding: 10px 50px;
 }
 
-
-[class^=article-en-avant-0] {
+.articles-en-avant a {
     border-radius: 10px;
 }
 
-[class^=article-en-avant-0] img:hover {
+.articles-en-avant img:hover {
     zoom: 105%;
     transition: all 0.1s ease-out;
-    position: relative;
-    left: -10px;
 }
 
 
@@ -237,9 +234,6 @@ header a {
     object-fit: contain;
     object-position: left;
     height: inherit;
-    position: relative;
-    left: -10px;
-    z-index: -1;
 }
 
 .article-en-avant-02 {

@@ -277,9 +277,6 @@
         width: 150px;
         border: var(--main-red-color) dashed 1.5px;
         text-align: center;
-    }
-
-    .categories-cote li {
         display: flex;
         justify-content: center;
         align-items: center;
